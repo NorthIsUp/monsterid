@@ -1,5 +1,5 @@
 from id import build_monster
-from md5 import md5
+from hashlib import md5
 from path import path
 import random
 import subprocess

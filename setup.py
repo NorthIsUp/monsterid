@@ -2,14 +2,14 @@
 from notsetuptools import setup
 from setuptools import find_packages
 
-__version__ = '0.1'
+__version__ = '0.1.1'
 
 tests_require = [
     'unittest2',
 ]
 
 install_requires = [
-    'PIL',
+    'Pillow',
     'path.py',
 ]
 
@@ -22,7 +22,8 @@ setup(
     url='http://github.com/NorthIsUp/monsterid',
     description='deterministically generated avatars in python',
     zip_safe=False,
-    packages=find_packages(exclude=['tests']),
+    packages=find_packages('src', exclude=['tests']),
+    package_dir={'':'src'},
     install_requires=install_requires,
     tests_require=tests_require,
     include_package_data=True,
