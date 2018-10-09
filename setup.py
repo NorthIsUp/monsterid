@@ -9,6 +9,7 @@ tests_require = [
 ]
 
 install_requires = [
+    'notsetuptools',
     'Pillow',
     'path.py',
 ]
