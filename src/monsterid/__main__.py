@@ -12,5 +12,5 @@ monster = build_monster(seed=seed, size=size)
 out = path('/tmp') / seed + '.png'
 monster.save(out)
 
-print out
+print(out)
 subprocess.Popen(('open', out))
