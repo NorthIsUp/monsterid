@@ -1,6 +1,5 @@
 #!/usr/bin/env python
-from notsetuptools import setup
-from setuptools import find_packages
+from setuptools import find_packages, setup
 
 __version__ = '0.1.1'
 
@@ -9,7 +8,6 @@ tests_require = [
 ]
 
 install_requires = [
-    'notsetuptools',
     'Pillow',
     'path.py',
 ]
