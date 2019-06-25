@@ -1,5 +1,5 @@
 from id import build_monster
-from md5 import md5
+from hashlib import md5
 from path import path
 import random
 import subprocess
@@ -12,5 +12,5 @@ monster = build_monster(seed=seed, size=size)
 out = path('/tmp') / seed + '.png'
 monster.save(out)
 
-print out
+print(out)
 subprocess.Popen(('open', out))
