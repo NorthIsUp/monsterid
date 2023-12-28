@@ -46,5 +46,5 @@ def build_monster(seed=None, size=None):
         monster_im.paste(part_im, (0, 0), part_im)
 
     if size:
-        monster_im = monster_im.resize(size, Image.ANTIALIAS)
+        monster_im = monster_im.resize(size, Image.LANCZOS)
     return monster_im
